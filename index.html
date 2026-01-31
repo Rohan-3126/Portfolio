@@ -1,55 +1,77 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Julius Rohan Reemus | Portfolio</title>
-
-  
   <style>
+    /* General */
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
       background: #0a1f44;
-      color: white;
+      color: #ffffff;
       line-height: 1.6;
     }
+
+    a {
+      color: #4da3ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     header {
       text-align: center;
       padding: 50px 20px;
+      background: linear-gradient(to right, #0a1f44, #112b5a);
     }
+
     h1 {
       font-size: 2.5em;
       margin-bottom: 10px;
     }
+
     h2 {
       border-bottom: 2px solid #007BFF;
       display: inline-block;
       margin-top: 40px;
     }
+
     h3 {
       color: #4da3ff;
-      margin-top: 25px;
+      margin-top: 20px;
     }
+
     section {
       max-width: 900px;
       margin: 0 auto;
       padding: 20px;
     }
+
+    ul {
+      padding-left: 20px;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
       margin-top: 10px;
     }
+
     th, td {
       border: 1px solid #007BFF;
       padding: 8px;
       text-align: left;
     }
+
     th {
       background-color: #0f2d60;
     }
+
+    /* Project Cards */
     .project-card {
       background-color: #112b5a;
       border-radius: 10px;
@@ -58,32 +80,44 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       transition: transform 0.2s, box-shadow 0.2s;
     }
+
     .project-card:hover {
       transform: scale(1.02);
       box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
     }
-    a {
-      color: #4da3ff;
-      text-decoration: none;
+
+    /* Contact Links */
+    .contact-links p {
+      margin: 5px 0;
     }
-    a:hover {
-      text-decoration: underline;
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      section {
+        padding: 15px;
+      }
+
+      table, th, td {
+        font-size: 0.9em;
+      }
     }
   </style>
 </head>
 <body>
-
-
-
 
 <header>
   <h1>Julius Rohan Reemus</h1>
   <p>Aspiring Network Engineer, C/C++ Programmer, and Learner</p>
 </header>
 
+<main>
 <section>
   <h2>About Me</h2>
-  <p>A Bachelor of Engineering in Computer Science and Engineering under Anna University affliated college (St. Mother Theresa Engineering College), with a CGPA of 8.6. Passionate about networks, systems, and algorithmic thinking, with a focus on mastering computer networking and systems design to build reliable, scalable solutions.</p>
+  <p>B.E. Computer Science & Engineering student (Anna University) with CGPA 8.6. Passionate about networking, systems, and algorithmic thinking. Focused on building scalable, reliable solutions with practical coding and networking skills.</p>
 </section>
 
 <section>
@@ -92,53 +126,51 @@
     <li><b>Languages:</b> C, C++, Python</li>
     <li><b>Tools:</b> GitHub, Arduino IDE, GNS3, Packet Tracer</li>
     <li><b>Operating System:</b> Linux</li>
-    <li><b>Domains:</b> Networking, Data Structures and Algorithms, Operating System Design, Competitive Programming</li>
+    <li><b>Domains:</b> Networking, Data Structures & Algorithms, OS Design, Competitive Programming</li>
   </ul>
 </section>
 
 <section>
   <h2>Projects</h2>
+
   <div class="project-card">
     <h3>Wanderly</h3>
-    <p>A data-driven travel recommendation engine written in Python, using SQLite for persistent storage and structured querying, with a Tkinter GUI and rule-based filtering to deliver personalized results efficiently.</p>
+    <p>Data-driven travel recommendation engine in Python with SQLite storage and Tkinter GUI. Delivers personalized results using rule-based filtering.</p>
     <p><b>Tech Stack:</b> Python, SQLite, Tkinter</p>
     <p><a href="https://github.com/Rohan-3126/My_Projects/tree/main/My_Projects/WanderlyApp_Py/Wanderly" target="_blank">View GitHub Repository</a></p>
   </div>
-</section>
-
-<section>
-  <h2>Upcoming Projects</h2>
 
   <div class="project-card">
     <h3>Brainf*ck Interpreter</h3>
-    <p>A minimalist interpreter built from scratch in C, designed to explore compiler logic, instruction parsing, and memory simulation for low-level language execution.</p>
+    <p>Minimalist C interpreter built from scratch. Explores compiler logic, instruction parsing, and memory simulation for low-level language execution.</p>
   </div>
 
   <div class="project-card">
-    <h3>CLI notetaking tool</h3>
-    <p>A lightweight CLI notebook manager written in C++, implementing direct file I/O, command parsing, and structured storage without external frameworks, emphasizing simplicity, performance, and control.</p>
+    <h3>CLI Notetaking Tool</h3>
+    <p>Lightweight C++ CLI notebook manager with direct file I/O, command parsing, and structured storage. Focused on simplicity, performance, and control.</p>
   </div>
+
 </section>
 
 <section>
-  <h2>Awards & Accolades</h2>
+  <h2>Awards & Achievements</h2>
 
   <h3>Coding Competitions</h3>
   <table>
     <tr><th>Event</th><th>Position</th><th>Institution</th></tr>
     <tr><td>Code Debugging</td><td>1st Prize</td><td>Sarah Tucker College</td></tr>
-    <tr><td>Code Debugging</td><td>2nd Prize</td><td>St. Francis Xavier Engineering College</td></tr>
+    <tr><td>Code Debugging</td><td>2nd Prize</td><td>St. Francis Xavier Eng. College</td></tr>
     <tr><td>Code Debugging</td><td>2nd Prize</td><td>SCAD Engineering College</td></tr>
     <tr><td>Code Debugging</td><td>3rd Prize</td><td>Sethu Institute of Technology</td></tr>
   </table>
 
-  <h3>Paper Presentations & Research</h3>
+  <h3>Research & Paper Presentations</h3>
   <table>
     <tr><th>Paper / Event</th><th>Position</th><th>Institution</th></tr>
-    <tr><td>“Applications of Checksums in Cybersecurity”</td><td>1st Prize</td><td>St. Mary's College</td></tr>
-    <tr><td>“Neural Triggers in Consumer Psychology”</td><td>3rd Prize</td><td>Kamaraj College of Arts and Science</td></tr>
+    <tr><td>Applications of Checksums in Cybersecurity</td><td>1st Prize</td><td>St. Mary's College</td></tr>
+    <tr><td>Neural Triggers in Consumer Psychology</td><td>3rd Prize</td><td>Kamaraj College of Arts & Science</td></tr>
     <tr><td>Kalam Awards - Project HERON</td><td>Finalist</td><td>World Youth Foundation</td></tr>
-    <tr><td>Hybrid Embedded Resilient Observation Nexus (HERON)</td><td>Jury award winner</td><td>Project Contest Innovations LLP</td></tr>
+    <tr><td>Hybrid Embedded Resilient Observation Nexus (HERON)</td><td>Jury Award Winner</td><td>Project Contest Innovations LLP</td></tr>
   </table>
 </section>
 
@@ -146,20 +178,23 @@
   <h2>Soft Skills</h2>
   <ul>
     <li>Critical Thinking & Problem-Solving</li>
-    <li>Public speaking</li>
-    <li>Leadership skills</li>
-    <li>Rapport building</li>
+    <li>Public Speaking</li>
+    <li>Leadership</li>
+    <li>Rapport Building</li>
     <li>Collaboration & Teamwork</li>
   </ul>
 </section>
 
 <section>
   <h2>Contact</h2>
-  <p>Email: <a href="mailto:rjuliusrohan@gmail.com">rjuliusrohan@gmail.com</a></p>
-  <p>GitHub: <a href="https://github.com/Rohan-3126" target="_blank">github.com/Rohan-3126</a></p>
-  <p>LinkedIn: <a href="https://www.linkedin.com/in/julius-rohan-reemus-169414331" target="_blank">LinkedIn Profile</a></p>
-  <p>Google Drive(for certificates): <a href="https://drive.google.com/drive/folders/1jNT0bYCd0uJRYjHrjaLvNyTXJNfWfoKL?usp=sharing" target="_blank">Certificates in Google drive</a></p>
+  <div class="contact-links">
+    <p>Email: <a href="mailto:rjuliusrohan@gmail.com">rjuliusrohan@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Rohan-3126" target="_blank">github.com/Rohan-3126</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/julius-rohan-reemus-169414331" target="_blank">linkedin.com/in/julius-rohan-reemus</a></p>
+    <p>Certificates: <a href="https://drive.google.com/drive/folders/1jNT0bYCd0uJRYjHrjaLvNyTXJNfWfoKL?usp=sharing" target="_blank">Google Drive</a></p>
+  </div>
 </section>
+</main>
 
 </body>
 </html>
